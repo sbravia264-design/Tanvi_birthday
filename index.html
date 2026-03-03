@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Tanvi ❤️</title>
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#141E30,#243B55);
+color:white;
+font-family:sans-serif;
+text-align:center;
+overflow:hidden;
+}
+
+h1{
+font-size:40px;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px pink;}
+to{ text-shadow:0 0 30px red;}
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:pink;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:red;
+color:white;
+}
+
+.heart{
+position:absolute;
+color:pink;
+animation:float 5s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);}
+}
+</style>
+</head>
+<body>
+
+<div>
+<h1>Happy Birthday Tanvi ❤️</h1>
+<p>My Queen 👑</p>
+<br>
+<a href="gallery.html">
+<button>Start Surprise 🎁</button>
+</a>
+</div>
+
+<script>
+function createHeart(){
+let heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=Math.random()*20+20+"px";
+document.body.appendChild(heart);
+setTimeout(()=>{heart.remove();},5000);
+}
+setInterval(createHeart,300);
+</script>
+
+<body>
+</html>

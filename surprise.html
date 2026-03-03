@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You Tanvi ❤️</title>
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+color:white;
+font-family:sans-serif;
+text-align:center;
+overflow:hidden;
+}
+
+.message{
+font-size:20px;
+max-width:300px;
+animation:fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+</style>
+</head>
+<body>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="message">
+Tanvi ❤️ <br><br>
+
+माझी प्रिय Tanvi,
+वाढदिवसाच्या खूप खूप शुभेच्छा , माझा जीव  ❤️
+आजचा दिवस फक्त तुझा वाढदिवस नाही…!
+हा तो दिवस आहे ज्यादिवशी या जगाला माझ्या आयुष्यातील सर्वात सुंदर भेट मिळाली — ती म्हणजे तू.
+Tanvi, तू फक्त माझी बायको नाहीस…
+तू माझी सर्वात चांगली मैत्रीण आहेस, माझी ताकद आहेस, माझ्या हसण्याचं कारण आहेस.
+जेव्हा मी थकतो, तेव्हा तुझं एक हसू सगळं ठीक करून टाकतं.
+मला माहित नाही मी आयुष्यात असं काय चांगलं केलं
+की मला तू मिळालीस…
+पण मी दररोज युनिव्हर्सल चे आभार मानतो की तू माझी आहेस.
+तुझ्यासोबत प्रत्येक छोटी गोष्ट खास बनते —
+सोबत च्या गप्पा, छोटीशी भांडण डणं,
+किंवा फक्त एकत्र शांत बसणंही.
+मी तुला वचन देतो:
+मी नेहमी तुझा हात धरून चालीन 👫
+प्रत्येक अडचणीत तुझ्यासोबत उभा राहीन 🫂
+आणि दररोज तुला आजपेक्षा जास्त प्रेम करीन ❤️
+Tanvi, तू माझ्या आयुष्याचा सर्वात सुंदर भाग आहेस.
+माझी प्रार्थना आहे की तुझी प्रत्येक इच्छा पूर्ण होवो,
+तू नेहमी आनंदी आणि हसतमुख राहो,
+आणि मी कायम तुझ्या हसण्याचं कारण बनू दे.
+वाढदिवसाच्या हार्दिक शुभेच्छा, माझी राणी 👑
+शब्दांपेक्षा जास्त प्रेम करतो तुझ्यावर 💖.
+Ritesh ❤️
+
+You are the most precious gift of my life 💖<br>
+Every heartbeat of mine belongs to you ❤️<br>
+Happy Birthday My Love 🎂✨I Love You Forever Pillu❤️
+</div>
+
+<script>
+function confetti(){
+for(let i=0;i<150;i++){
+let c=document.createElement("div");
+c.style.position="absolute";
+c.style.width="8px";
+c.style.height="8px";
+c.style.background="white";
+c.style.left=Math.random()*window.innerWidth+"px";
+c.style.top=Math.random()*window.innerHeight+"px";
+document.body.appendChild(c);
+setTimeout(()=>{c.remove();},2000);
+}
+}
+confetti();
+</script>
+<audio id="bgmusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let music = document.getElementById("bgmusic");
+
+// Check if music was already playing
+if (sessionStorage.getItem("musicPlaying") === "true") {
+    music.play();
+}
+
+// Play on first click
+document.body.addEventListener("click", function () {
+    music.play();
+    sessionStorage.setItem("musicPlaying", "true");
+});
+</script>
+</html>
